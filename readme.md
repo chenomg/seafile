@@ -14,7 +14,7 @@ ___
 sudo yum -y install wget
 # Ubuntu
 sudo apt install wget -y
-wget https://github.com/chenomg/seafile/blob/master/install_seafile.sh
+wget https://raw.githubusercontent.com/chenomg/seafile/master/install_seafile.sh
 chmod +x install_seafile.sh && ./install_seafile.sh
 ```
 
