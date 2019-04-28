@@ -107,16 +107,17 @@ if [ "$stype" == 1 ]
 			install_sea
 		fi
 	elif [ "$stype" == 2 ]
-		if [ -e "/home/MyCloud" ]
-			then
-			echo "目录存在，请检查是否已经安装。"
-			exit
-		else
-			echo "目录不存在，创建目录..."
-			mkdir -p /home/MyCloud
-			#执行安装函数
-			install_sea
-		fi
+        then
+            if [ -e "/home/MyCloud" ]
+                then
+                echo "目录存在，请检查是否已经安装。"
+                exit
+            else
+                echo "目录不存在，创建目录..."
+                mkdir -p /home/MyCloud
+                #执行安装函数
+                install_sea
+            fi
 	elif [ "$stype" == 3 ]
 		then
 			/home/MyCloud/seafile-server/seafile.sh stop
