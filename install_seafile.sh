@@ -25,7 +25,7 @@ function install_sea() {
 	#下载安装包6.2.3 64bit
 	wget http://seafile-downloads.oss-cn-shanghai.aliyuncs.com/seafile-server_6.3.4_x86-64.tar.gz
 	#解压
-	tar -zxvf seafile-server_6.2.3_x86-64.tar.gz
+	tar -zxvf seafile-server_6.3.4_x86-64.tar.gz
 	mkdir installed
 	mv seafile-server*.tar.gz ./installed
 	mv seafile-server-6* seafile-server
